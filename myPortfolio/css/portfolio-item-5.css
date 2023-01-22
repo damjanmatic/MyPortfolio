@@ -1,0 +1,399 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --fw-reg: 300;
+    --fw-bold: 900;
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    --clr-blue: #0EAFE1;
+    --clr-gray: #333333;
+    --clr-lgray: #F2F2F2;
+    --clr-orange: #d77e0ad9;
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+    --fclr-dark: #000100;
+    --nclr-trans: rgba(48, 48, 48, 0.9);
+}
+
+@media (min-width:800px) {
+     :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-darks);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.list__holder h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+}
+
+
+/*  header  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav {
+    position: fixed;
+    background: var(--nclr-trans);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav-toggle {
+    padding: 0.5em;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    height: 20px;
+    align-self: center;
+    position: relative;
+    z-index: 1000;
+    right: 2em;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(4px);
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--clr-accent);
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-toggle.nav-open {
+    position: fixed;
+    right: 4em;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--clr-accent);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before {
+    top: 6px;
+}
+
+.hamburger::after {
+    bottom: 6px;
+}
+
+
+/*          toDoList            */
+
+.main__wrapper {
+    width: 100%;
+    background: var(--clr-lgray);
+    display: flex;
+    flex-direction: column;
+}
+
+.list__holder {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list__form {
+    display: flex;
+}
+
+.list__input,
+.list__input--submit {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.list__input {
+    flex: 1 1 0%;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--clr-dark);
+    margin-right: .5em;
+    color: var(--clr-orange);
+    font-size: 1.125rem;
+}
+
+.list__input::placeholder {
+    color: var(--clr-orange);
+}
+
+.list__input--submit {
+    color: var(--clr-gray);
+    font-weight: var(--fw-bold);
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: transform .075s ease-in;
+}
+
+.list__input--submit:hover {
+    transform: scale(1.075);
+}
+
+.list__input--submit:active {
+    transform: scale(1.175);
+}
+
+.main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1 1 0%;
+}
+
+.main input,
+.main button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.task-list {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-dark);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: .5rem;
+}
+
+.text {
+    color: var(--clr-orange);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.25s;
+}
+
+.text:not(:read-only) {
+    color: var(--clr-accent);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.25s;
+}
+
+.btnActions {
+    display: flex;
+    margin: 0 -8px;
+}
+
+.task button {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 1.125rem;
+    font-weight: var(--fw-bold);
+    transition: 0.25s;
+}
+
+.task button:hover {
+    transform: scale(1.075);
+}
+
+.task button:active {
+    transform: scale(1.175);
+}
+
+.edit,
+.delete {
+    color: var(--clr-accent);
+}
+
+
+/*              Footer              */
+
+.footer {
+    background: var(--fclr-dark);
+    color: var(--clr-accent);
+    text-align: center;
+    pad: 2.5em 0em;
+    font-size: var(--fs-h3);
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+    position: relative;
+    top: 1em;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.social-list__link {
+    padding: .25em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+}

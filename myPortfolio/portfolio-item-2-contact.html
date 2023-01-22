@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/portfolio-item-2.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a id="logo" class="header__logo" href="index.html#home"><img src="img/Logo_navigation_Blue.svg" alt="#"></a>
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a class="nav__link" href="portfolio-item-2.html">Home</a>
+                </li>
+                <li class="nav__list--item">
+                    <a class="nav__link" href="portfolio-item-2-about.html">About</a>
+                </li>
+                <li class="nav__list--item">
+                    <a class="nav__link" href="portfolio-item-2-contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="header__btn--holder">
+                <a href="#"><button class="regIn btn">Register</button></a>
+                <button class="signIn btn">Sign in</button>
+            </div>
+            <button class="navToggle">
+                    <span class="hamburger"></span>
+                </button>
+        </nav>
+    </header>
+    <!--        section form           -->
+    <section class="section__contant--form">
+        <h3 class="section__contact--title">CONTACT US</h3>
+        <div class="formWrapper">
+            <img class="form__picture" src="img/contact_page_illustration.svg" alt="">
+            <form id="myForm" class="section__form" action="submit">
+                <p class="contact__subtitle">Name</p>
+                <input class="input__name" type="text" placeholder="Type your name" id="name" required>
+                <p class="contact__subtitle">Email</p>
+                <input class="input__email" type="email" placeholder="Email" id="email" required>
+                <p class="contact__subtitle">Message</p>
+                <textarea form="myForm" class="form__textArea" rows="5" id="msg" required></textarea>
+                <button type="submit" class="form__btn btn" id="submitBtn">submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <h3 class="footer__title">Tesseract</h3>
+                <p class="footer__subtitle">East Side 66<br>1855 New York<br><br>+66 555 1111</p>
+                <a href="#" class="footer__emailLink">info@tesseract.com</a>
+            </div>
+            <div class="footer__content">
+                <a href="#" class="footer__link">Company</a>
+                <a href="#" class="footer__link">News</a>
+                <a href="#" class="footer__link">Carrer</a>
+            </div>
+            <div class="footer__content">
+                <a href="#" class="footer__link">Cookie & Third Party List</a>
+                <a href="#" class="footer__link">Data Privacy Statement</a>
+                <a href="#" class="footer__link">Imprint</a>
+                <a href="#" class="footer__link">Terms of use</a>
+            </div>
+            <div class="footer__content">
+                <a href="#" class="footer__logo--link"><img src="img/logo_footer.svg" alt="" class="footer__logo--img"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/pf-item.js"></script>
+    <script src="js/pf-form.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

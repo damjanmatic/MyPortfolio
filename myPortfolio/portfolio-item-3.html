@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDamjan Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio-item-3.css">
+    <script src="https://kit.fontawesome.com/0f52de8b45.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html#home"><img src="img/Logo_navigation.svg" alt="Image of logo"></a>
+        </div>
+        <h4>Welcome to Cat Intelligence Agency
+            <p>Aka CIA</p>
+        </h4>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav_item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav_item"><a href="index.html#services" class="nav__link">My services</a></li>
+                <li class="nav_item"><a href="index.html#about" class="nav__link">About me</a></li>
+                <li class="nav_item"><a href="index.html#work" class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+
+    <!--            memeModal           -->
+
+
+    <!-- MemeModal Intro -->
+
+    <section class="section__modal">
+        <div class="section__modal--intro">
+            <img src="./img/memeimg/cat-img.png" class="section__modal__intro--img">
+            <div>
+                <h2 class="modal__heading">Skimbleshank`s Purrfect...</h2>
+                <h1 class="modal__heading">Meme Picker</h1>
+            </div>
+        </div>
+    </section>
+    <!--        memeModalMain            -->
+    <section>
+        <main>
+            <h3 class="main__modal--heading">Select Your Current Emotion</h3>
+            <div class="main__controls--container">
+                <div class="main__emotion--radios" id="emotion-radios"></div>
+                <div class="main__gifs--check">
+                    <label for="gifs-only-option" class="main__gifs__check-label">Animated GIFs only</label>
+                    <input type="checkbox" id="gifs-only-option">
+                </div>
+                <button class="main__get--image--btn" id="get-image-btn">Get Image</button>
+            </div>
+        </main>
+
+        <div class="main__meme--modal" id="meme-modal">
+            <button class="main__meme--modal--clsbtn" id="meme-modal-close-btn">X</button>
+            <div id="meme-modal-inner"></div>
+        </div>
+    </section>
+    <!--    Most annoying Cookie    -->
+    <div class="cookie__holder" id="cookie-modal">
+        <div class="cookie__btn--holder">
+            <button class="cookie__btn--close" id="cookie-close-btn">X</button>
+        </div>
+
+        <div class="cookie__inner" id="cookie-inner">
+            <h4>We love Your Data!</h4>
+            <p class="cookie__text" id="cookie-text">As being the CIA, we have a strict policy on tracking and spamming: we'll definitely track you, and we'll definitely spam you. To use this site, enter your name and email address and accept our ridiculous terms and conditions.</p>
+            <form id="consent-form">
+
+                <input class="cookie__input" type="text" name="fullName" placeholder="Enter your full name" required>
+                <input class="cookie__input" type="email" name="email" placeholder="Enter your email" required>
+
+                <div class="cookie__choice--btns" id="cookie__choice--btns">
+                    <button type="submit" class="cookieAcc--btn">Accept</button>
+                    <button class="cookie--btn" id="decline-btn">Decline</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <a href="mailto:damjanmatic@hotmail.com" class="footer__link">damjanmatic@hotmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a target="_blank" class="social-list__link" href="https://github.com/damjanmatic?tab=projects">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/damjan-pronounce-damyan-matic-341a5a224/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/portfolio-item-3.js"></script>
+
+</body>
+
+
+</html>

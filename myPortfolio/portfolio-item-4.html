@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDamjan Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio-item-4.css">
+    <script src="https://kit.fontawesome.com/0f52de8b45.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <a href="index.html#home"><img src="img/Logo_navigation.svg" alt="Image of logo"></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav_item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav_item"><a href="index.html#services" class="nav__link">My services</a></li>
+                    <li class="nav_item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav_item"><a href="index.html#work" class="nav__link">My work</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi and Welcome to <br>my <strong>Snake Game</strong>
+            </h1>
+            <img class="intro__img" src="img/snake.jpg" alt="a picture of Developer">
+        </section>
+        <!-- Section Game -->
+
+        <section class="section">
+            <p>Use arrow keys for direction</p>
+            <button class="btn__start" id="start">Start/Restart</button>
+            <div class="grid"></div>
+            <h2 class="section__title">Score: <span id="score"></span></h2>
+        </section>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <a href="mailto:damjanmatic@hotmail.com" class="footer__link">damjanmatic@hotmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://github.com/damjanmatic?tab=projects">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/damjan-pronounce-damyan-matic-341a5a224/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/snakegame.js"></script>
+
+</body>
+
+
+</html>

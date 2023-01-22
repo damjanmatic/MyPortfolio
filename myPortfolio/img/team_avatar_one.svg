@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="228" height="228" viewBox="0 0 228 228">
+  <defs>
+    <filter id="Ellipse_59" x="0" y="0" width="228" height="228" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="team_avatar_one" data-name="team avatar one" transform="translate(-541.862 -603.228)">
+    <g transform="matrix(1, 0, 0, 1, 541.86, 603.23)" filter="url(#Ellipse_59)">
+      <circle id="Ellipse_59-2" data-name="Ellipse 59" cx="105" cy="105" r="105" transform="translate(9 6)" fill="#f7f7f7"/>
+    </g>
+    <path id="Path_453" data-name="Path 453" d="M359.835,486.35l5.088,17.627,65.026-1.147-.57-32.3c-.451-25.564-18.518-47.612-44.081-47.161S343.481,445.435,343.932,471l3.714,33.283,10.6-.187Z" transform="translate(262.215 235.543)" fill="#333"/>
+    <circle id="Ellipse_63" data-name="Ellipse 63" cx="29.176" cy="29.176" r="29.176" transform="translate(621.206 675.755)" fill="#ffb6b6"/>
+    <path id="Path_454" data-name="Path 454" d="M416.517,444.494a11.316,11.316,0,0,0-2.01-6.244c-.134-.189-.269-.364-.4-.539a11.369,11.369,0,0,0-9.117-4.356l-20.97.378-20.957.364a11.354,11.354,0,0,0-11.126,11.53l4.99,10.047,2.872,5.772.472-.27c18.138-10.2,25.555-10.33,49.559-.85l.485.189,1.9-4.868,4.315-11.045Z" transform="translate(265.811 240.129)" fill="#333"/>
+    <path id="Path_455" data-name="Path 455" d="M446.986,487.772c-6.147-6.244-26.945-3.762-26.945-3.762l-54.9,3.52c-12.175.917-23.144,10.842-27.117,14.861.635.634,1.285,1.254,1.948,1.847a75.782,75.782,0,0,0,90.371,8.739c5.882-3.574,13.408-7.858,18.124-12.862,1.868-1.969,3.363-1.93,5.019-4.087A16.782,16.782,0,0,0,446.986,487.772Z" transform="translate(260.473 261.9)" fill="#333"/>
+  </g>
+</svg>

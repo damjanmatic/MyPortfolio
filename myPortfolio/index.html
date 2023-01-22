@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDamjan Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/0f52de8b45.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo_navigation.svg" alt="Image of logo"></a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav_item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav_item"><a href="#services" class="nav__link">My services</a></li>
+                <li class="nav_item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav_item"><a href="#work" class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Intro-->
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Damjan Matić</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+        <img class="intro__img" src="img/Developer_Programmer.jpg" alt="a picture of Developer">
+    </section>
+
+    <!-- My services -->
+
+    <section class="my-services" id="services">
+        <h2 class="section__title section_title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>HTML 5</h3>
+                <div><img src="img/5352-html5_102567-e.png" alt="Image of HTML 5 Logo"></div>
+            </div>
+
+            <!-- Service -->
+
+            <div class="service">
+                <h3>CSS 3</h3>
+                <div><img src="img/css_icon_130661-e.png" alt="Image of CSS 3 Logo"></div>
+            </div>
+
+            <!-- Service -->
+
+            <div class="service">
+                <h3>Java Script</h3>
+                <div><img src="img/javascript_icon_130900-e.png" alt="Image of Javascript logo"></div>
+            </div>
+            <!-- Service -->
+        </div>
+
+        <!-- Services End -->
+
+        <a href="#work" class="btn">My work</a>
+    </section>
+
+    <!-- About me -->
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Frontend developer based in Belgrade</p>
+        <div class="about-me__body">
+            <p>Hello, my designation is Damjan Matić. I was born at age zero, i survived and thrived for 35 years.</p>
+            <p>I was a chef and sports court manager, but now i evovled into being frond end developer. I am also a father of two young living organisms which i adore.</p>
+            <p>Don't be shy, check out my work!</p>
+        </div>
+        <img src="img/computers.svg" alt="#" class="about-me__img">
+    </section>
+
+    <!-- My work -->
+
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle"></p>
+        <div class="portfolio">
+            <!-- Portfolio Item -->
+            <a href="portfolio-item-1.html" class="portfolio__item">
+                <img src="img/sunset.jpg" alt="Image of Man with open arms at sunset" class="portfolio__img">
+            </a>
+            <a href="portfolio-item-2.html" class="portfolio__item">
+                <img src="img/Image_of_my_template_site.png" alt="Site Snapshot" class="portfolio__img">
+            </a>
+            <a href="portfolio-item-3.html" class="portfolio__item">
+                <img src="img/lina-angelov-Ah_QC2v2alE-unsplash-min.jpg" alt="#" class="portfolio__img">
+            </a>
+            <a href="portfolio-item-4.html" class="portfolio__item">
+                <img src="img/snake.jpg" alt="#" class="portfolio__img">
+            </a>
+            <a href="portfolio-item-5.html" class="portfolio__item">
+                <img src="img/to_Do_list.png" alt="#" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <a href="mailto:damjanmatic@hotmail.com" class="footer__link">damjanmatic@hotmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a target="_blank" class="social-list__link" href="https://github.com/damjanmatic?tab=projects">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/damjan-pronounce-damyan-matic-341a5a224/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+
+</html>

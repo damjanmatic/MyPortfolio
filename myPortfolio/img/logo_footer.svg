@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129" height="110" viewBox="0 0 129 110">
+  <g id="logo_footer" data-name="logo footer" transform="translate(-1477 -4036)">
+    <g id="Layer_2-2" transform="translate(1506 4036)">
+      <g id="Group_86" data-name="Group 86">
+        <path id="Path_437" data-name="Path 437" d="M35.918,82.824,0,61.949V20.875L35.918,0,71.872,20.872V61.949L35.918,82.822ZM4.856,59.155,35.92,77.208l31.1-18.054V23.669L35.92,5.616,4.856,23.667Z" fill="#f7f7f7"/>
+        <path id="Path_438" data-name="Path 438" d="M69.543,109.155,44.4,94.544V65.791L69.543,51.18,94.71,65.791V94.546L69.543,109.157ZM47.8,92.587l21.744,12.637L91.311,92.587V67.748L69.543,55.111,47.8,67.748V92.59Z" transform="translate(-33.62 -38.754)" fill="#f7f7f7"/>
+      </g>
+    </g>
+    <text id="TESSERACT" transform="translate(1477 4143)" fill="#f7f7f7" font-size="16" font-family="Verdana-Bold, Verdana" font-weight="700" letter-spacing="0.2em"><tspan x="0" y="0">TESSERACT</tspan></text>
+  </g>
+</svg>
